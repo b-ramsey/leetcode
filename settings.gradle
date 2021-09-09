@@ -1,3 +1,4 @@
 rootProject.name = 'leetcode'
 include 'problem2'
+include 'problem763'
 
