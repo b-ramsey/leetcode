@@ -1,5 +1,7 @@
 package com.bramsey.home.leetcode.problem617;
 
+import com.bramsey.home.leetcode.common.TreeNode;
+
 public class Solution {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if (root1 == null) {
