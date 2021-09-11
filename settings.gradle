@@ -3,4 +3,5 @@ include 'problem2'
 include 'problem763'
 include 'problem617'
 include 'common'
+include 'problem104'
 
