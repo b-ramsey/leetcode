@@ -1,5 +1,7 @@
 package com.bramsey.home.leetcode.problem617;
 
+import com.bramsey.home.leetcode.common.TreeNode;
+
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;

@@ -1,5 +1,6 @@
 package com.bramsey.home.leetcode.problem617;
 
+import com.bramsey.home.leetcode.common.TreeNode;
 import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

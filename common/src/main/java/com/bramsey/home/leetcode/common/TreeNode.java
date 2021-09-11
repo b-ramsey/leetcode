@@ -1,13 +1,13 @@
-package com.bramsey.home.leetcode.problem617;
+package com.bramsey.home.leetcode.common;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
     TreeNode() {
     }
@@ -16,13 +16,13 @@ public class TreeNode {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    public TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
     }
 
-    static TreeNode from(Integer array[]) {
+    public static TreeNode from(Integer array[]) {
         return from(array, 0);
     }
 
