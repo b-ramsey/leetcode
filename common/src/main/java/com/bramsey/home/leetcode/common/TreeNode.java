@@ -22,11 +22,11 @@ public class TreeNode {
         this.right = right;
     }
 
-    public static TreeNode from(Integer array[]) {
+    public static TreeNode from(Integer[] array) {
         return from(array, 0);
     }
 
-    private static TreeNode from(Integer array[], int index) {
+    private static TreeNode from(Integer[] array, int index) {
         if (index >= array.length) return null;
         if (array[index] == null) return null;
         return new TreeNode(array[index], from(array, index * 2 + 1), from(array, index *2 + 2));
