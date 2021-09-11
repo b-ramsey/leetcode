@@ -4,21 +4,21 @@ import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
-class SolutionTest {
+class AsyncSolutionTest {
 
-    Solution solution;
+    AsyncSolution solution;
 
     @BeforeEach
     void setup() {
-        solution = new Solution();
+        solution = new AsyncSolution();
     }
 
 
 
     @Test
-    void exampleOne() {
+    void exampleOne() throws Exception {
         TreeNode root1 = TreeNode.from(Arrays.array(1,3,2,5));
         TreeNode root2 = TreeNode.from(Arrays.array(2,1,3,null,4,null,7));
         TreeNode expected = TreeNode.from(Arrays.array(3,4,5,5,4,null,7));
@@ -28,7 +28,7 @@ class SolutionTest {
     }
 
     @Test
-    void exampleTwo() {
+    void exampleTwo() throws Exception {
         TreeNode root1 = TreeNode.from(Arrays.array(1));
         TreeNode root2 = TreeNode.from(Arrays.array(1,2));
         TreeNode expected = TreeNode.from(Arrays.array(2,2));
@@ -39,12 +39,12 @@ class SolutionTest {
 
 
     @Test
-    void nullTest() {
+    void nullTest() throws Exception {
         assertThat(solution.mergeTrees(null, null)).isNull();
     }
 
     @Test
-    void toCompleteTest() {
+    void toCompleteTest() throws Exception {
         TreeNode root1 = TreeNode.from(Arrays.array(1,2));
         TreeNode root2 = TreeNode.from(Arrays.array(1, null, 3));
         TreeNode expected = TreeNode.from(Arrays.array(2,2,3));
